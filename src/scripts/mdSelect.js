@@ -102,10 +102,11 @@ function mdSelect($compile, $parse) {
         'aria-label': 'Select Row',
         'ng-click': '$mdSelect.toggle($event)',
         'ng-checked': '$mdSelect.isSelected()',
-        'ng-disabled': '$mdSelect.disabled'
+        'ng-disabled': '$mdSelect.disabled',
+        'class': 'md-primary'
       });
 
-      return angular.element('<td class="md-cell md-checkbox-cell md-primary">').append($compile(checkbox)(scope));
+      return angular.element('<td class="md-cell md-checkbox-cell ">').append($compile(checkbox)(scope));
     }
 
     function disableSelection() {

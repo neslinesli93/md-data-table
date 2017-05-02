@@ -31,7 +31,8 @@ function mdHead($compile) {
         'aria-label': 'Select All',
         'ng-click': 'toggleAll()',
         'ng-checked': 'allSelected()',
-        'ng-disabled': '!getSelectableRows().length'
+        'ng-disabled': '!getSelectableRows().length',
+        'class': 'md-primary'
       });
     }
     

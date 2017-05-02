@@ -734,7 +734,8 @@ function mdHead($compile) {
         'aria-label': 'Select All',
         'ng-click': 'toggleAll()',
         'ng-checked': 'allSelected()',
-        'ng-disabled': '!getSelectableRows().length'
+        'ng-disabled': '!getSelectableRows().length',
+        'class': 'md-primary'
       });
     }
     
@@ -983,10 +984,11 @@ function mdSelect($compile, $parse) {
         'aria-label': 'Select Row',
         'ng-click': '$mdSelect.toggle($event)',
         'ng-checked': '$mdSelect.isSelected()',
-        'ng-disabled': '$mdSelect.disabled'
+        'ng-disabled': '$mdSelect.disabled',
+        'class': 'md-primary'
       });
 
-      return angular.element('<td class="md-cell md-checkbox-cell md-primary">').append($compile(checkbox)(scope));
+      return angular.element('<td class="md-cell md-checkbox-cell ">').append($compile(checkbox)(scope));
     }
 
     function disableSelection() {
