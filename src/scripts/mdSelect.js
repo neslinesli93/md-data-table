@@ -105,7 +105,7 @@ function mdSelect($compile, $parse) {
         'ng-disabled': '$mdSelect.disabled'
       });
 
-      return angular.element('<td class="md-cell md-checkbox-cell">').append($compile(checkbox)(scope));
+      return angular.element('<td class="md-cell md-checkbox-cell md-primary">').append($compile(checkbox)(scope));
     }
 
     function disableSelection() {
